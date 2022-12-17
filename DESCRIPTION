@@ -3,8 +3,19 @@ Type: Package
 Title: Solar Radiation Prediction
 Version: 0.1.0
 Author: Maxime Wendling
-Maintainer: https://github.com/Mawen67/mySolarPackage
-Description: The dataset contains such columns as: "wind direction", "wind speed", "humidity" and temperature. The response parameter that is to be predicted is: "Solar_radiation". It contains measurements for the past 4 months and you have to predict the level of solar radiation. Just imagine that you've got solar energy batteries and you want to know will it be reasonable to use them in future?
-License: Please pay me 9.999$ per month if you use this package
+Maintainer: Maxime Wendling
+Description: The dataset contains such columns as: "wind direction", "wind speed", "humidity" and "temperature". It contains measurements for 4 months. It is used to perform forecasting on time-series.
+License: GPL (>=3) - Please pay me 9.999$ per month if you use this package
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.2
+RemoteType: github
+Imports:
+    dplyr,
+    forecast
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
