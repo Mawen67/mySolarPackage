@@ -29,7 +29,7 @@ test_that("filter_solar: selecting Temperature work", {
 
 # Check wrong column name -> do not want an error, but an empty dataframe
 # Create a Warning
-test_that("filter_solar: wrong column name", {
+test_that("filter_solar: wrong column name: return empty dataframe", {
 
   returned_value <- filter_solar(
     SolarEnergy,

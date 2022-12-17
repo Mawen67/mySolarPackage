@@ -3,9 +3,9 @@ Type: Package
 Title: Solar Radiation Prediction
 Version: 0.1.0
 Author: Maxime Wendling
-Maintainer: Maxime Wendling
+Maintainer: Maxime Wendling <maxime.wendling.001@student.uni.lu>
 Description: The dataset contains such columns as: "wind direction", "wind speed", "humidity" and "temperature". It contains measurements for 4 months. It is used to perform forecasting on time-series.
-License: GPL (>=3) - Please pay me 9.999$ per month if you use this package
+License: GPL (>=3)
 Encoding: UTF-8
 LazyData: true
 Depends: 
