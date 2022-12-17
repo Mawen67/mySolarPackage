@@ -1,6 +1,6 @@
 Package: mySolarPackage
 Type: Package
-Title: Solar Radiation Prediction
+Title: Solar Data Forecast
 Version: 0.1.0
 Author: Maxime Wendling
 Maintainer: Maxime Wendling <maxime.wendling.001@student.uni.lu>
@@ -9,7 +9,7 @@ License: GPL (>=3)
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1)
 RoxygenNote: 7.2.2
 RemoteType: github
 Imports:
