@@ -30,6 +30,7 @@ filter_solar <- function(SolarEnergy_data,
 #' Perform a ARIMA model on a specific column
 #' @param SolarEnergy_data A data frame containing solar data.
 #' @param col_of_interest A string corresponding to the column of the `SolarEnergy` data frame that you wish to perform forecasting on.
+#' @param number_of_forecast An integer corresponding to the number of points that you wish to forecast.
 #' @importFrom dplyr select
 #' @import forecast
 #' @return A plot
@@ -40,7 +41,8 @@ filter_solar <- function(SolarEnergy_data,
 #'               col_of_interest = "Temperature")
 
 predict_solar <- function(SolarEnergy_data,
-                         col_of_interest){
+                         col_of_interest,
+                         number_of_forecast = 2000){
 
   data_of_interest <- filter_solar(SolarEnergy_data, col_of_interest)
 
@@ -52,6 +54,6 @@ predict_solar <- function(SolarEnergy_data,
     #output_arima <-forecast::Arima(data_of_interest,order=c(ar.param,i.param,ma.param))
     output_arima <- forecast::auto.arima(data_of_interest)
     #tsdiag(output_arima)
-    forecast::autoplot(forecast::forecast(output_arima, 2000))
+    forecast::autoplot(forecast::forecast(output_arima, number_of_forecast))
     }
 }
