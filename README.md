@@ -4,6 +4,6 @@ R Package which provide a dataset and two functions.
 
 To install the package, please use the following line
 
-*devtools::install_github("Mawen67/mySolarPackage", ref = "26c541ef392bc10ddf944594f7255679ba0525a5")*
+*devtools::install_github("Mawen67/mySolarPackage", ref = "748e27952e4b4ec7ef1992e3325999ec91517037")*
 
 After the installation, you can run the following pipeline: https://github.com/Mawen67/Project_Pipeline
