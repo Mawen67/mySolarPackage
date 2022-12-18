@@ -59,6 +59,7 @@ test_that("predict_solar: wrong column name: warning is thrown", {
   expect_warning({
     predict_solar(
       SolarEnergy,
-      col_of_interest = "wrong_name")
+      col_of_interest = "wrong_name",
+      number_of_forecast = 2000)
   }, "does not match any column in the original data")
 })

@@ -4,12 +4,14 @@
 \alias{predict_solar}
 \title{Perform a ARIMA model on a specific column}
 \usage{
-predict_solar(SolarEnergy_data, col_of_interest)
+predict_solar(SolarEnergy_data, col_of_interest, number_of_forecast = 2000)
 }
 \arguments{
 \item{SolarEnergy_data}{A data frame containing solar data.}
 
 \item{col_of_interest}{A string corresponding to the column of the `SolarEnergy` data frame that you wish to perform forecasting on.}
+
+\item{number_of_forecast}{An integer corresponding to the number of points that you wish to forecast (default value = 2000).}
 }
 \value{
 A plot
@@ -20,5 +22,6 @@ Perform a ARIMA model on a specific column
 \examples{
 # Forecast the `Temperature`
 predict_solar(SolarEnergy,
-              col_of_interest = "Temperature")
+              col_of_interest = "Temperature",
+              number_of_forecast = 2000)
 }
